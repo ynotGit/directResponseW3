@@ -1,0 +1,51 @@
+.no-sidebar {
+  .site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+
+    .site-header {
+      text-align: center;
+
+      .top-banner {
+        background-color: $color__background-secondry;
+        color: $color__font-secondry;
+        font-size: 1.2rem;
+        padding: 1.4rem;
+      }
+
+      .tap-to-call {
+        display: flex;
+        background-color: $color__background-tertiary;
+        text-transform: uppercase;
+        padding: 0.6rem 0;
+
+        a {
+          display: flex;
+          place-items: center;
+          color: $color__font-secondry;
+          margin: auto;
+          text-decoration: none;
+
+          p {
+            margin: 0;
+          }
+
+          svg {
+            margin-right: 0.4rem;
+          }
+        }
+      }
+
+      .site-branding {
+        padding: 0.8rem 0;
+      }
+
+      .location {
+      }
+    }
+  }
+}
